@@ -13,7 +13,7 @@ public class Db {
 
     private void connect(){
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             cnx = DriverManager.getConnection
                     (
                         Constantes.URL,
